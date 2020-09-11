@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Addresses</h1>
+
+<% if policy(@addresses).index? %>
+
+<%= render  partial: "admin_index_html" %>
+
+<% else %>
+
+<%= render  partial: "user_index_html" %>
+
+<% end %>
